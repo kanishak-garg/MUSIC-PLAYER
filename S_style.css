@@ -1,0 +1,182 @@
+:root{
+	--main:#0C1027;
+}
+
+#body{
+	display: flex;
+	flex-direction: row;
+}
+/* body styling */
+
+/* left body */
+
+.left{
+	position: relative;
+	left:5%;
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+}
+.card{
+	margin: 10px; 
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	position: relative;
+	background-image: linear-gradient(45deg,red,#140ee9);
+}
+
+.bigimg{
+	width: 100%;
+	height: 330px;
+	min-width: 200px;
+}
+.bigimg img{
+	height: 100%;
+	width: 100%;
+	opacity: 0.9;
+}
+.detailt{
+	position: relative;
+	top:5%;
+	margin:10px;
+	height: 100%;
+}
+.desc{
+	color: white;
+	font-size: 1.3rem;
+}
+.desc h1,p{
+	    font-family: -webkit-pictograph;
+	margin:10px;
+}
+.play{
+	width: 100%;
+	margin-top: 30px;
+	margin-left: 20px;
+}
+#btn{
+	width: 35%;
+	height: 40px;
+	background-color: #a607ff;
+	font-size: 20px;
+	color:white;
+	border-radius: 5px;
+	box-shadow: 0 0 4px 2px var(--main);
+}
+#btn:hover{
+	opacity: 0.8;
+}
+
+
+/* styling the list */
+.list{
+	margin-top: 20px;
+}
+.l_card{
+	height: 80px;
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	background-color: #1A1E33;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom:10px;
+}
+.imgs{
+	margin:10px;
+	height: 60px;
+	width: 60px;
+}
+.imgs img{
+	height: 100%;
+	width: 100%;
+}
+
+.name *{
+	margin:5px;
+	color: white;
+}
+
+.far{
+	font-size: 25px;
+	color: white;
+	align-self: center;
+	margin:10px;
+	padding: 10px;
+}
+
+.song_list{
+	text-decoration: none;
+	list-style-type: none;
+}
+.list{
+	position: relative;
+	width: 95%;
+	left:5%;
+}
+
+.aa{
+	background-color: #202439;
+}
+
+/* right side */
+
+.right{
+	position: relative;
+	left:3%;
+	width: 30%;
+}
+
+
+/* media query for responsiveness */
+@media (max-width: 1330px)
+{
+	.left{
+		width: 80%;
+	}
+}
+
+@media (max-width: 1050px)
+{
+	.left{
+		left:2%;
+		width: 90%;
+	}
+	.list{
+		left:0%;
+	}
+}
+
+@media (max-width: 780px)
+{
+	.bigimg{
+		width: 140%;
+		height: 330px;
+	}
+	.detailt{
+		margin-right: 0px;
+	}
+}
+@media (max-width: 650px)
+{
+	span{
+		display: none;
+	}
+	#btn{
+		width: 60%;
+	}
+}
+
+@media (max-width: 500px){
+	.song_list{
+		left:2%;
+		width: 95%;
+	}
+	.far{
+		margin:5px;
+		padding:5px;
+	}
+
+}
